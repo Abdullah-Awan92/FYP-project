@@ -8,17 +8,17 @@ const Sidebar = () => {
     const linkClass = (path) =>
         `flex items-center px-8 py-4 text-lg transition-colors ${
             currentPath === path
-                ? 'bg-[#6082B6] text-white font-semibold'
-                : 'text-white hover:bg-[#6082B6]'
+                ? 'bg-[#003366] text-white font-semibold'
+                : 'text-white hover:bg-[#003366]'
         }`;
 
     return (
-        <div className="w-1/5 bg-[#191970] text-white flex flex-col justify-between py-10 sticky top-0 self-start h-screen">
+        <div className="w-64 bg-[#002855] text-white flex flex-col justify-between py-10 sticky top-0 self-start h-screen">
             <div>
                 <div className="text-center mb-12">
-                    <img src='/LOGO-removebg-preview.png' alt="UET Logo" className="w-24 h-24 mx-auto" />
+                    <img src='/LOGO-removebg-preview.png' alt="UET Logo" className="w-20 h-20 mx-auto" />
                 </div>
-                <nav>
+                <nav className="flex flex-col gap-2">
                     <Link to="/dashboard" className={linkClass('/dashboard')}>
                         <i className="fas fa-house mr-2.5"></i>Dashboard
                     </Link>
@@ -43,3 +43,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+

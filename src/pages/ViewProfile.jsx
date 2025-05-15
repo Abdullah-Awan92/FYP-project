@@ -19,16 +19,20 @@ const ViewProfile = () => {
       <Sidebar />
       <div className="flex-1">
         {/* Top Bar */}
-        <div className="bg-[#CCCCFF] h-[60px] flex justify-end items-center px-8 absolute top-0 left-[20%] w-[80%] shadow">
-          <span className="text-base mr-2.5 text-[#2c3e50] font-semibold">Reg No: 2021-CS-123</span>
-          <img src={profilePic} alt="Student Logo" className="w-10 h-10 rounded-full" />
+       <div className="bg-[#CCCCFF] p-4 flex justify-end items-center shadow">
+          <div className="text-right">
+            <h4 className="font-bold">Student Name</h4>
+            <p className="text-sm text-gray-700">21bcs000888@uetpeshawar.edu.pk</p>
+          </div>
+          <img src="/profile.png" alt="Profile" className="w-12 h-12 rounded-full ml-4" />
+        </div>
+
+        <div className="w-full p-6 bg-[#f0f2f5] mt-4">
         </div>
 
         {/* Main Content */}
-        <div className="w-full flex justify-center items-center p-10 mt-[60px]">
+        <div className="w-full flex justify-center items-center p-10">
           <div className="bg-white rounded-2xl shadow-xl w-full max-w-2xl p-10 border border-gray-200">
-            <h2 className="text-3xl font-bold text-[#2c3e50] text-center mb-8">My Profile</h2>
-
             <div className="flex flex-col items-center mb-6">
               <div className="relative">
                 <img

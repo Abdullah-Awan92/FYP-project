@@ -23,23 +23,27 @@ const TestPage = () => {
       {/* Main Content */}
       <div className="flex-1">
         {/* Top Bar with Back Button */}
-        <div className="bg-[#ecf0f1] h-[60px] flex justify-between items-center px-8 absolute top-0 left-[20%] w-[80%] shadow">
-          {/* Back Button on the Left */}
-         <button
-  onClick={() => navigate(-1)}
-  className="flex items-center gap-2 text-[#2c3e50] bg-white hover:bg-[#dcdde1] border border-gray-300 px-4 py-2 rounded-full shadow transition duration-200"
->
-  <span className="text-xl">←</span>
-  <span className="font-semibold">Back</span>
-</button>
+     <div className="bg-[#CCCCFF] h-[80px] flex justify-between items-center px-6 shadow">
+      {/* Back Button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="flex items-center gap-2 text-[#2c3e50] bg-white hover:bg-[#dcdde1] border border-gray-300 px-4 py-2 rounded-full shadow transition duration-200"
+      >
+        <span className="text-xl">←</span>
+        <span className="font-semibold text-sm">Back</span>
+      </button>
 
+      {/* User Info */}
+      <div className="bg-[#CCCCFF] p-4 flex justify-end items-center ">
+  <div className="text-right">
+    <h4 className="font-bold">Student Name</h4>
+    <p className="text-sm text-gray-700">21bcs000888@uetpeshawar.edu.pk</p>
+  </div>
+  <img src="/profile.png" alt="Profile" className="w-12 h-12 rounded-full ml-4" />
+</div>
 
-          {/* User Info on the Right */}
-         <div className="flex items-center">
-            <span className="text-base mr-2.5 text-[#2c3e50] font-semibold">Reg No: 2021-CS-123</span>
-            <img src="/user-286-removebg-preview.png" alt="Student Logo" className="w-10 h-10 rounded-full" />
-          </div>
-        </div>
+    </div>
+
 
         {/* Main Content */}
         <div className="w-full p-8 bg-[#f0f2f5] mt-[60px]">
@@ -50,12 +54,12 @@ const TestPage = () => {
             <table className="w-full border-collapse mt-5 bg-white rounded-lg overflow-hidden shadow-md">
               <thead>
                 <tr>
-                  <th className="p-3.5 text-left border-b bg-[#4169E1] text-white font-semibold uppercase">Subject Name</th>
-                  <th className="p-3.5 text-left border-b bg-[#4169E1] text-white font-semibold uppercase">Exam No</th>
-                  <th className="p-3.5 text-left border-b bg-[#4169E1] text-white font-semibold uppercase">Semester</th>
-                  <th className="p-3.5 text-left border-b bg-[#4169E1] text-white font-semibold uppercase">Total Time</th>
-                  <th className="p-3.5 text-left border-b bg-[#4169E1] text-white font-semibold uppercase">Date</th>
-                  <th className="p-3.5 text-left border-b bg-[#4169E1] text-white font-semibold uppercase">Action</th>
+                  <th className="p-3.5 text-left border-b bg-[#002855] text-white font-semibold uppercase">Subject Name</th>
+                  <th className="p-3.5 text-left border-b bg-[#002855] text-white font-semibold uppercase">Exam No</th>
+                  <th className="p-3.5 text-left border-b bg-[#002855] text-white font-semibold uppercase">Semester</th>
+                  <th className="p-3.5 text-left border-b bg-[#002855] text-white font-semibold uppercase">Total Time</th>
+                  <th className="p-3.5 text-left border-b bg-[#002855] text-white font-semibold uppercase">Date</th>
+                  <th className="p-3.5 text-left border-b bg-[#002855] text-white font-semibold uppercase">Action</th>
                 </tr>
                 
               </thead>

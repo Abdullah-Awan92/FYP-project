@@ -48,18 +48,26 @@ const ViewResultDetail = () => {
       <Sidebar />
       <div className="flex-1">
         {/* Top Bar */}
-        <div className="bg-[#CCCCFF] h-[60px] flex justify-between items-center px-8 shadow w-full">
-          <button
-            onClick={() => navigate(-1)}
-            className="text-[#2c3e50] font-medium bg-white hover:bg-[#dcdde1] border border-gray-300 px-4 py-2 rounded-full shadow transition duration-200"
-          >
-            ← Back
-          </button>
-          <div className="flex items-center">
-            <span className="text-base mr-2.5 text-[#2c3e50] font-semibold">Reg No: 2021-CS-123</span>
-            <img src="/user-286-removebg-preview.png" alt="Student Logo" className="w-10 h-10 rounded-full" />
-          </div>
-        </div>
+       <div className="bg-[#CCCCFF] h-[80px] flex justify-between items-center px-6 shadow">
+      {/* Back Button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="flex items-center gap-2 text-[#2c3e50] bg-white hover:bg-[#dcdde1] border border-gray-300 px-4 py-2 rounded-full shadow transition duration-200"
+      >
+        <span className="text-xl">←</span>
+        <span className="font-semibold text-sm">Back</span>
+      </button>
+
+      {/* User Info */}
+      <div className="bg-[#CCCCFF] p-4 flex justify-end items-center ">
+  <div className="text-right">
+    <h4 className="font-bold">Student Name</h4>
+    <p className="text-sm text-gray-700">21bcs000888@uetpeshawar.edu.pk</p>
+  </div>
+  <img src="/profile.png" alt="Profile" className="w-12 h-12 rounded-full ml-4" />
+</div>
+
+    </div>
 
         {/* Main Content */}
         <div className="p-10">
